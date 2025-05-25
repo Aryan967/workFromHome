@@ -12,7 +12,7 @@ document.getElementById('applicationForm').addEventListener('submit',
     gender: form.gender.value,
   };
 
-fetch("https://script.google.com/macros/s/AKfycbxYGpnYlDZiIZPqyboNdz-xqjpDk_y-D1FfqKuJInCtIq9yfpLK-ihrdOhR5pP3cyRj/exec", {
+fetch("https://script.google.com/macros/s/AKfycbze6e1GjLc_F3Dh-M1j8SqM5cjx5ZmzA0Khmuqn7QxBDupi-yBzsHFUnYQQkhu6BUKe/exec", {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
