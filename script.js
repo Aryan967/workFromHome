@@ -4,15 +4,14 @@ document.getElementById('applicationForm').addEventListener('submit',
 
   const form = e.target;
   const data = {
-    name: form.name.value,
-    email: form.email.value,
-    mobile: form.mobile.value,
-    location: form.location.value,
+    fullname: form.fullname.value,
+    mobileno: form.mobileno.value,
+    state: form.state.value,
     age: form.age.value,
-    gender: form.gender.value,
-  };
+    email: form.email.value,
+     };
 
-fetch("https://script.google.com/macros/s/AKfycbyYcBDjIwY7L_BSFa1Qj0Fi25MRqFxEGwvRhb-NfvVeCysjFB-Z35OcYPTBxmp26fg/exec", {
+fetch("https://script.google.com/macros/s/AKfycbzopq808bffeAKhGvNowWA7n0mU2tVEIrMEBhwIz2FJwEF7yEamQfkI9bmyRQhyoHVc/exec", {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
